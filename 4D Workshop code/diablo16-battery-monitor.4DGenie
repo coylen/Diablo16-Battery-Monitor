@@ -1,0 +1,1306 @@
+﻿Version     0.0
+Platform    Gen4-uLCD-32DT-L
+PlatRes     240x320
+Depends
+    DS1307.lib
+    i2c.lib
+end
+Options
+    Genie
+    Speed                        115200
+    Checksum                     No
+    ResponseSize                 2
+    Multidrop                    No
+    Destination                  1
+    DestBank                     0
+    MainForm                     0
+    SndBuf                       0
+    ButtonDisable                No
+    SignedDigits                 Yes
+end
+Form
+    Name                         Form0
+    Alias                        Home
+    Bgtype                       Color
+    Color                        BLACK
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   'Report Message'
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits0
+    Alias                        Bat1_V
+    Bitmap                       'led test.bmp'
+    Digits                       5
+    LeadingZero                  No
+    Left                         20
+    Top                          36
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext0
+    Alias                        Statictext0
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Voltage
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    9
+    Font.Style                   []
+    Height                       12
+    Left                         128
+    Top                          40
+    Transparent                  Yes
+    Width                        70
+    WordWrap                     Yes
+end
+CustomDigits
+    Name                         Customdigits1
+    Alias                        Bat1_A
+    Bitmap                       'led test.bmp'
+    Digits                       5
+    LeadingZero                  No
+    Left                         20
+    Top                          68
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext1
+    Alias                        Statictext1
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      CURRENT
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    9
+    Font.Style                   []
+    Height                       12
+    Left                         128
+    Top                          72
+    Transparent                  Yes
+    Width                        70
+    WordWrap                     Yes
+end
+CustomDigits
+    Name                         Customdigits2
+    Alias                        Bat1_AH
+    Bitmap                       'led test.bmp'
+    Digits                       5
+    LeadingZero                  No
+    Left                         20
+    Top                          100
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Meter
+    Name                         Meter0
+    Alias                        Bat1_cap
+    Angle                        40
+    Backimage                    (None)
+    Bevel.BorderColor            clBtnFace
+    Bevel.BorderWidth            0
+    Bevel.InnerColor             BLACK
+    Bevel.InnerHighlight         clBtnHighlight
+    Bevel.InnerOutline           None
+    Bevel.InnerShadow            clBtnShadow
+    Bevel.InnerSpace             1
+    Bevel.InnerStyle             Lowered
+    Bevel.Innerwidth             2
+    Bevel.OuterColor             clBtnFace
+    Bevel.OuterHighlight         clBtnHighlight
+    Bevel.OuterOutline           Outer
+    Bevel.OuterShadow            clBtnShadow
+    Bevel.OuterSpace             0
+    Bevel.OuterStyle             Raised
+    Bevel.Outerwidth             1
+    Bevel.Visible                No
+    Caption                      'BAT 1 CAPACITY'
+    Color                        BLACK
+    Font.Color                   SILVER
+    Font.Effects                 []
+    Font.Name                    Arial
+    Font.Size                    8
+    Font.Style                   []
+    Height                       82
+    LabelOffsetX                 15
+    LabelOffsetY                 10
+    Labels                       10
+    Left                         0
+    Maxvalue                     100
+    Minvalue                     0
+    NeedleColor                  SILVER
+    NeedleWidth                  1
+    Scale.Color1                 GREEN
+    Scale.Color2                 YELLOW
+    Scale.Color3                 RED
+    Scale.Enlarge                5
+    Scale.Heightmax              8
+    Scale.Heightmin              5
+    Scale.Percent1               60
+    Scale.Percent2               25
+    Scale.Ticks                  61
+    Scale.Visible                Yes
+    Spacing                      20
+    Top                          124
+    Width                        160
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Meter
+    Name                         Meter1
+    Alias                        Bat2_cap
+    Angle                        40
+    Backimage                    (None)
+    Bevel.BorderColor            clBtnFace
+    Bevel.BorderWidth            0
+    Bevel.InnerColor             BLACK
+    Bevel.InnerHighlight         clBtnHighlight
+    Bevel.InnerOutline           None
+    Bevel.InnerShadow            clBtnShadow
+    Bevel.InnerSpace             1
+    Bevel.InnerStyle             Lowered
+    Bevel.Innerwidth             2
+    Bevel.OuterColor             clBtnFace
+    Bevel.OuterHighlight         clBtnHighlight
+    Bevel.OuterOutline           Outer
+    Bevel.OuterShadow            clBtnShadow
+    Bevel.OuterSpace             0
+    Bevel.OuterStyle             Raised
+    Bevel.Outerwidth             1
+    Bevel.Visible                No
+    Caption                      'BAT 2 CAPACITY'
+    Color                        BLACK
+    Font.Color                   SILVER
+    Font.Effects                 []
+    Font.Name                    Arial
+    Font.Size                    8
+    Font.Style                   []
+    Height                       82
+    LabelOffsetX                 15
+    LabelOffsetY                 10
+    Labels                       10
+    Left                         160
+    Maxvalue                     100
+    Minvalue                     0
+    NeedleColor                  SILVER
+    NeedleWidth                  1
+    Scale.Color1                 GREEN
+    Scale.Color2                 YELLOW
+    Scale.Color3                 RED
+    Scale.Enlarge                5
+    Scale.Heightmax              8
+    Scale.Heightmin              5
+    Scale.Percent1               60
+    Scale.Percent2               25
+    Scale.Ticks                  61
+    Scale.Visible                Yes
+    Spacing                      20
+    Top                          124
+    Width                        160
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits3
+    Alias                        Bat2_V
+    Bitmap                       'led test.bmp'
+    Digits                       5
+    LeadingZero                  No
+    Left                         220
+    Top                          36
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits4
+    Alias                        Bat2_A
+    Bitmap                       'led test.bmp'
+    Digits                       5
+    LeadingZero                  No
+    Left                         220
+    Top                          68
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits5
+    Alias                        Bat2_AH
+    Bitmap                       'led test.bmp'
+    Digits                       5
+    LeadingZero                  No
+    Left                         220
+    Top                          100
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext2
+    Alias                        Statictext2
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'BATTERY 1'
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    14
+    Font.Style                   []
+    Height                       19
+    Left                         4
+    Top                          8
+    Transparent                  Yes
+    Width                        132
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext3
+    Alias                        Statictext3
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'BATTERY 2'
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    14
+    Font.Style                   []
+    Height                       19
+    Left                         184
+    Top                          8
+    Transparent                  Yes
+    Width                        132
+    WordWrap                     Yes
+end
+Strings
+    Name                         Strings0
+    Alias                        Strings0
+    Alignment                    Center
+    BGcolor                      BLACK
+    Height                       19
+    FGcolor                      LIME
+    Font.Bold                    No
+    Font.CharSet                 ANSI
+    Font.Italic                  No
+    Font.Name                    'DSEG14 Modern'
+    Font.Opaque                  Yes
+    Font.Size                    11
+    Font.Strikethrough           No
+    Font.Underline               No
+    Left                         108
+    Strings                      'AH (15 MINS)\nAH (1 Hour)\nAH (24HOURS)\nAH (DAY)\n'
+    StringsStyle                 Message
+    Top                          104
+    Width                        113
+    OnChanged                    ''
+end
+UserButton
+    Name                         Userbutton0
+    Alias                        home_home
+    Height                       25
+    Images                       home_0.png\nhome_1.png
+    Left                         2
+    Matrix                       0
+    Momentary                    On
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    ''
+end
+UserButton
+    Name                         Userbutton1
+    Alias                        home_bat1
+    Height                       25
+    Images                       bat1_0.png\nbat1_1.png
+    Left                         66
+    Matrix                       0
+    Momentary                    No
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    Form1Activate
+end
+UserButton
+    Name                         Userbutton2
+    Alias                        home_bat2
+    Height                       25
+    Images                       bat2_0.png\nbat2_1.png
+    Left                         130
+    Matrix                       0
+    Momentary                    No
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    Form5Activate
+end
+UserButton
+    Name                         Userbutton3
+    Alias                        home_settings
+    Height                       25
+    Images                       setting_0.png\nsetting_1.png
+    Left                         194
+    Matrix                       0
+    Momentary                    No
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    Form3Activate
+end
+UserButton
+    Name                         Userbutton4
+    Alias                        Home_sleep
+    Height                       25
+    Images                       sleep_0.png\nsleep_1.png
+    Left                         258
+    Matrix                       0
+    Momentary                    No
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    Form4Activate
+end
+MagicCode
+    Name                         MagicCode0
+    Alias                        'constants and functions'
+    Code                         MagicCode0.inc
+    InsertPoint                  Constant/Global/Data
+end
+MagicCode
+    Name                         MagicCode1
+    Alias                        'Form activation'
+    Code                         MagicCode1.inc
+    InsertPoint                  PostActivateForm
+end
+MagicObject
+    Name                         MagicObject0
+    Alias                        MagicObject0
+    Code                         MagicObject0.inc
+end
+Circle
+    Name                         Circle0
+    Alias                        Circle0
+    Color                        LIME
+    Filled                       Yes
+    Rad                          1
+    X                            65
+    Y                            55
+end
+Circle
+    Name                         Circle1
+    Alias                        Circle1
+    Color                        LIME
+    Filled                       Yes
+    Rad                          1
+    X                            65
+    Y                            86
+end
+Circle
+    Name                         Circle2
+    Alias                        Circle2
+    Color                        LIME
+    Filled                       Yes
+    Rad                          1
+    X                            65
+    Y                            119
+end
+Circle
+    Name                         Circle3
+    Alias                        Circle3
+    Color                        LIME
+    Filled                       Yes
+    Rad                          1
+    X                            265
+    Y                            55
+end
+Circle
+    Name                         Circle4
+    Alias                        Circle4
+    Color                        LIME
+    Filled                       Yes
+    Rad                          1
+    X                            265
+    Y                            86
+end
+Circle
+    Name                         Circle5
+    Alias                        Circle5
+    Color                        LIME
+    Filled                       Yes
+    Rad                          1
+    X                            265
+    Y                            119
+end
+MagicKbClrEvent
+    Name                         MagicKbClrEvent0
+    Alias                        'settings keyboard'
+    Code                         MagicKbClrEvent0.inc
+end
+MagicCode
+    Name                         MagicCode4
+    Alias                        'Main loop'
+    Code                         MagicCode4.inc
+    InsertPoint                  MainLoop
+end
+MagicTouch
+    Name                         MagicTouch
+    Alias                        'settings touch'
+    Code                         MagicTouch.inc
+end
+MagicCode
+    Name                         MagicCode2
+    Alias                        Initialisations
+    Code                         MagicCode2.inc
+    InsertPoint                  PostGenieInit
+end
+MagicEvent
+    Name                         MagicEvent0
+    Alias                        'sleep event'
+    Code                         MagicEvent0.inc
+end
+Form
+    Name                         Form1
+    Alias                        Bat1_day
+    Bgtype                       Color
+    Color                        BLACK
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext4
+    Alias                        Statictext4
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Capacity
+    Color                        LIME
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         184
+    Top                          188
+    Transparent                  Yes
+    Width                        45
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext5
+    Alias                        Statictext5
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Voltage
+    Color                        LIME
+    Font.Color                   BLUE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         232
+    Top                          188
+    Transparent                  Yes
+    Width                        42
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext6
+    Alias                        Statictext6
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      Current
+    Color                        LIME
+    Font.Color                   RED
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         276
+    Top                          188
+    Transparent                  Yes
+    Width                        41
+    WordWrap                     Yes
+end
+UserButton
+    Name                         Userbutton5
+    Alias                        b1d_day
+    Height                       50
+    Images                       day_0.png\nday_1.png
+    Left                         286
+    Matrix                       2
+    Momentary                    On
+    Stretch                      No
+    Top                          12
+    Width                        30
+    OnChanged                    ''
+end
+UserButton
+    Name                         Userbutton6
+    Alias                        b1d_week
+    Height                       50
+    Images                       week_0.png\nweek_1.png
+    Left                         286
+    Matrix                       2
+    Momentary                    No
+    Stretch                      No
+    Top                          66
+    Width                        31
+    OnChanged                    ''
+end
+UserButton
+    Name                         Userbutton7
+    Alias                        b1d_month
+    Height                       50
+    Images                       month_0.png\nmonth_1.png
+    Left                         286
+    Matrix                       2
+    Momentary                    No
+    Stretch                      No
+    Top                          120
+    Width                        30
+    OnChanged                    ''
+end
+UserButton
+    Name                         Userbutton8
+    Alias                        b1d_newer
+    Height                       14
+    Images                       left.png
+    Left                         150
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      No
+    Top                          188
+    Width                        33
+    OnChanged                    Strings1Next
+end
+UserButton
+    Name                         Userbutton9
+    Alias                        b1d_older
+    Height                       14
+    Images                       right.png
+    Left                         12
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      No
+    Top                          188
+    Width                        33
+    OnChanged                    Strings1Previous
+end
+Strings
+    Name                         Strings1
+    Alias                        Strings1
+    Alignment                    Center
+    BGcolor                      BLACK
+    Height                       16
+    FGcolor                      LIME
+    Font.Bold                    No
+    Font.CharSet                 ANSI
+    Font.Italic                  No
+    Font.Name                    Tahoma
+    Font.Opaque                  Yes
+    Font.Size                    14
+    Font.Strikethrough           No
+    Font.Underline               No
+    Left                         48
+    Strings                      TODAY\nYesterday\n
+    StringsStyle                 Message
+    Top                          188
+    Width                        100
+    OnChanged                    ''
+end
+UserButton
+    Name                         Userbutton10
+    Alias                        b1d_home
+    Height                       25
+    Images                       home_0.png\nhome_1.png
+    Left                         2
+    Matrix                       1
+    Momentary                    No
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    Form0Activate
+end
+UserButton
+    Name                         Userbutton11
+    Alias                        b1d_bat1
+    Height                       25
+    Images                       bat1_0.png\nbat1_1.png
+    Left                         68
+    Matrix                       1
+    Momentary                    On
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    ''
+end
+UserButton
+    Name                         Userbutton12
+    Alias                        b1d_bat2
+    Height                       25
+    Images                       bat2_0.png\nbat2_1.png
+    Left                         130
+    Matrix                       1
+    Momentary                    No
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    ''
+end
+UserButton
+    Name                         Userbutton13
+    Alias                        b1d_settings
+    Height                       25
+    Images                       setting_0.png\nsetting_1.png
+    Left                         194
+    Matrix                       1
+    Momentary                    No
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    Form3Activate
+end
+UserButton
+    Name                         Userbutton14
+    Alias                        b1d_sleep
+    Height                       25
+    Images                       sleep_0.png\nsleep_1.png
+    Left                         260
+    Matrix                       1
+    Momentary                    No
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    Form4Activate
+end
+UserImages
+    Name                         Userimages0
+    Alias                        Userimages0
+    Height                       182
+    Images                       b1d.png\nb124.png\nb2d.png\nb224.png
+    Left                         0
+    Stretch                      No
+    Top                          0
+    Width                        270
+    OnChanged                    ''
+end
+Form
+    Name                         Form2
+    Alias                        'For testing'
+    Bgtype                       Color
+    Color                        BLACK
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Image
+    Name                         Image0
+    Alias                        Image0
+    Height                       120
+    Image                        'main menu base.png'
+    Left                         68
+    Source.Height                689
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 645
+    Top                          64
+    Width                        120
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Image
+    Name                         Image1
+    Alias                        Image1
+    Height                       129
+    Image                        'userbutton base.png'
+    Left                         72
+    Source.Height                477
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 479
+    Top                          60
+    Width                        125
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+4Dbutton
+    Name                         4Dbutton0
+    Alias                        4Dbutton0
+    Height                       48
+    Left                         260
+    Matrix                       7
+    Momentary                    Yes
+    Size                         48x48
+    Style                        Red
+    Top                          104
+    Type                         Slider01
+    Width                        48
+    OnChanged                    ''
+end
+4Dbutton
+    Name                         4Dbutton1
+    Alias                        4Dbutton1
+    Height                       48
+    Left                         264
+    Matrix                       -1
+    Momentary                    Yes
+    Size                         48x48
+    Style                        Red
+    Top                          48
+    Type                         Slider01
+    Width                        48
+    OnChanged                    ''
+end
+Form
+    Name                         Form3
+    Alias                        Settings
+    Bgtype                       Color
+    Color                        BLACK
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits6
+    Alias                        Customdigits6
+    Bitmap                       'led test.bmp'
+    Digits                       2
+    LeadingZero                  Yes
+    Left                         8
+    Top                          20
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Keyboard
+    Name                         Keyboard0
+    Alias                        Keyboard0
+    AutoCapsDisplay              Yes
+    Fill                         (Default)
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    8
+    Font.Style                   [Bold]
+    Height                       125
+    HighlightCaps                LIME
+    KeyboardType                 KB1
+    KeyDistance                  0
+    Left                         161
+    SmallFont.Color              BLACK
+    SmallFont.Effects            []
+    SmallFont.Name               Tahoma
+    SmallFont.Size               7
+    SmallFont.Style              []
+    Top                          84
+    Width                        159
+    OnChanged                    MagicKbClrEvent0
+end
+CustomDigits
+    Name                         Customdigits7
+    Alias                        Customdigits7
+    Bitmap                       'led test.bmp'
+    Digits                       2
+    LeadingZero                  Yes
+    Left                         44
+    Top                          20
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits8
+    Alias                        Customdigits8
+    Bitmap                       'led test.bmp'
+    Digits                       2
+    LeadingZero                  Yes
+    Left                         80
+    Top                          20
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+UserButton
+    Name                         Userbutton15
+    Alias                        Userbutton15
+    Height                       25
+    Images                       home_0.png\nhome_1.png
+    Left                         2
+    Matrix                       0
+    Momentary                    No
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    Form0Activate
+end
+UserButton
+    Name                         Userbutton16
+    Alias                        Userbutton16
+    Height                       25
+    Images                       bat1_0.png\nbat1_1.png
+    Left                         66
+    Matrix                       0
+    Momentary                    No
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    Form1Activate
+end
+UserButton
+    Name                         Userbutton17
+    Alias                        Userbutton17
+    Height                       25
+    Images                       bat2_0.png\nbat2_1.png
+    Left                         130
+    Matrix                       0
+    Momentary                    No
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    ''
+end
+UserButton
+    Name                         Userbutton18
+    Alias                        Userbutton18
+    Height                       25
+    Images                       setting_0.png\nsetting_1.png
+    Left                         194
+    Matrix                       0
+    Momentary                    On
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    ''
+end
+UserButton
+    Name                         Userbutton19
+    Alias                        Userbutton19
+    Height                       25
+    Images                       sleep_0.png\nsleep_1.png
+    Left                         258
+    Matrix                       0
+    Momentary                    No
+    Stretch                      No
+    Top                          212
+    Width                        60
+    OnChanged                    Form4Activate
+end
+StaticText
+    Name                         Statictext7
+    Alias                        Statictext7
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      TIME
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    9
+    Font.Style                   []
+    Height                       12
+    Left                         0
+    Top                          4
+    Transparent                  Yes
+    Width                        40
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext8
+    Alias                        Statictext8
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      :
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    14
+    Font.Style                   []
+    Height                       19
+    Left                         39
+    Top                          20
+    Transparent                  Yes
+    Width                        4
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext9
+    Alias                        Statictext9
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      :
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    14
+    Font.Style                   []
+    Height                       19
+    Left                         76
+    Top                          20
+    Transparent                  Yes
+    Width                        4
+    WordWrap                     Yes
+end
+CustomDigits
+    Name                         Customdigits9
+    Alias                        Customdigits9
+    Bitmap                       'led test.bmp'
+    Digits                       2
+    LeadingZero                  Yes
+    Left                         168
+    Top                          20
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits10
+    Alias                        Customdigits10
+    Bitmap                       'led test.bmp'
+    Digits                       2
+    LeadingZero                  Yes
+    Left                         212
+    Top                          20
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits11
+    Alias                        Customdigits11
+    Bitmap                       'led test.bmp'
+    Digits                       4
+    LeadingZero                  Yes
+    Left                         252
+    Top                          20
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext10
+    Alias                        Statictext10
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      DATE
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    9
+    Font.Style                   []
+    Height                       12
+    Left                         160
+    Top                          4
+    Transparent                  Yes
+    Width                        40
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext11
+    Alias                        Statictext11
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      /
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    14
+    Font.Style                   []
+    Height                       19
+    Left                         240
+    Top                          20
+    Transparent                  Yes
+    Width                        12
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext12
+    Alias                        Statictext12
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      /
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    14
+    Font.Style                   []
+    Height                       19
+    Left                         198
+    Top                          20
+    Transparent                  Yes
+    Width                        12
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext13
+    Alias                        Statictext13
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'BAT 1 CAPACITY'
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    9
+    Font.Style                   []
+    Height                       12
+    Left                         4
+    Top                          84
+    Transparent                  Yes
+    Width                        124
+    WordWrap                     Yes
+end
+CustomDigits
+    Name                         Customdigits12
+    Alias                        Customdigits12
+    Bitmap                       'led test.bmp'
+    Digits                       3
+    LeadingZero                  Yes
+    Left                         32
+    Top                          104
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+CustomDigits
+    Name                         Customdigits13
+    Alias                        Customdigits13
+    Bitmap                       'led test.bmp'
+    Digits                       3
+    LeadingZero                  Yes
+    Left                         32
+    Top                          164
+    OnChanged                    ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+StaticText
+    Name                         Statictext14
+    Alias                        Statictext14
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      'BAT 2 CAPACITY'
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    9
+    Font.Style                   []
+    Height                       12
+    Left                         4
+    Top                          140
+    Transparent                  Yes
+    Width                        124
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext15
+    Alias                        Statictext15
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      AH
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         80
+    Top                          110
+    Transparent                  Yes
+    Width                        20
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext16
+    Alias                        Statictext16
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      AH
+    Color                        BLACK
+    Font.Color                   LIME
+    Font.Effects                 []
+    Font.Name                    'DSEG14 Modern'
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         80
+    Top                          170
+    Transparent                  Yes
+    Width                        20
+    WordWrap                     Yes
+end
+Form
+    Name                         Form4
+    Alias                        sleep
+    Bgtype                       Color
+    Color                        BLACK
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+WinButton
+    Name                         Winbutton0
+    Alias                        Winbutton0
+    Appearance.Alignment         Center
+    Appearance.Layout            Left
+    Appearance.PictureAlignment  Right
+    Appearance.SimpleLayout      No
+    Appearance.Spacing           3
+    AutoSizeToPicture            No
+    Bevel                        Yes
+    BevelColor                   clWhite
+    Caption                      Winbutton0
+    Color                        clGray
+    Font.Color                   clWindowText
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    8
+    Font.Style                   []
+    Height                       240
+    Left                         0
+    Matrix                       -1
+    Momentary                    Yes
+    Picture                      (None)
+    StatusWhenOff.BGcolor        RED
+    StatusWhenOff.Caption        ''
+    StatusWhenOff.Glow           Yes
+    StatusWhenOff.Color          WHITE
+    StatusWhenOff.Effects        []
+    StatusWhenOff.Name           Tahoma
+    StatusWhenOff.Size           8
+    StatusWhenOff.Style          []
+    StatusWhenOff.Visible        Yes
+    StatusWhenOn.BGcolor         RED
+    StatusWhenOn.Caption         ''
+    StatusWhenOn.Glow            Yes
+    StatusWhenOn.Color           WHITE
+    StatusWhenOn.Effects         []
+    StatusWhenOn.Name            Tahoma
+    StatusWhenOn.Size            8
+    StatusWhenOn.Style           []
+    StatusWhenOn.Visible         Yes
+    Top                          0
+    Width                        320
+    OnChanged                    MagicEvent0
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Form
+    Name                         Form5
+    Alias                        DEBUG
+    Bgtype                       Color
+    Color                        BLACK
+    Image                        (None)
+    Source.Height                0
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 0
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Strings
+    Name                         Strings2
+    Alias                        Strings2
+    Alignment                    Left
+    BGcolor                      BLACK
+    Height                       229
+    FGcolor                      WHITE
+    Font.Bold                    No
+    Font.CharSet                 ANSI
+    Font.Italic                  No
+    Font.Name                    '4D Font3 (8x12)'
+    Font.Opaque                  Yes
+    Font.Size                    12
+    Font.Strikethrough           No
+    Font.Underline               No
+    Left                         4
+    Strings                      BOB\nBOB2\nBOB3\n
+    StringsStyle                 Message
+    Top                          4
+    Width                        313
+    OnChanged                    ''
+end
