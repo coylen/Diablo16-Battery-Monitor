@@ -9,7 +9,7 @@ I2C1_Open(I2C_SLOW,PA10,PA11);
 //TODO: Setup UART for BLUETOOTH
 
 //set time for RTC
-Corrected_RTC_to_sys();
+RTC_to_sys();
 var buf[10];
 to(buf);putstr("DEBUG TEST");
 PrintStrings(2, buf, 1);

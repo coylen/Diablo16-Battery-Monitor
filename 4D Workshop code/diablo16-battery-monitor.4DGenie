@@ -2,8 +2,6 @@
 Platform    Gen4-uLCD-32DT-L
 PlatRes     240x320
 Depends
-    DS1307.lib
-    i2c.lib
 end
 Options
     Genie
