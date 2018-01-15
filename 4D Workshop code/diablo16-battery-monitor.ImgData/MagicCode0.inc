@@ -2,6 +2,7 @@
 //         is the equivalent of RefreshIncrement
 //#constant _hours:=0, _minutes, _seconds, _date, _month, _year;
 #inherit "..\\libs\\DS1307.lib"
+#inherit "include\\debug.inc"
 //#inherit "i2c.lib"
 //#constant K_LRS 1   // try this
 //#constant K_LRS 5   // try this

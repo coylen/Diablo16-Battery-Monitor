@@ -18,6 +18,7 @@ PrintStrings(2, buf, 1);
 //TODO: LOAD DATA FROM MEMORY
 
 //TODO: SETUP TIMER FOR DATA CAPTURE
-
+    DEBUG_Register(demoprovider);
+    DEBUG_Register(demoprovider2);
 
 

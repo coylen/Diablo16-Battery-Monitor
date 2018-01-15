@@ -332,7 +332,7 @@ UserButton
     Stretch                      No
     Top                          212
     Width                        60
-    OnChanged                    ''
+    OnChanged                    Form5Activate
 end
 UserButton
     Name                         Userbutton1

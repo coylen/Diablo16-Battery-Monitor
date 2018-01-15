@@ -49,8 +49,15 @@ if(CurrentForm == 4)
 endif
 
 if(CurrentForm == 5 && dummy ==0)
-    PrintStrings(2,"SWITCHED",1);
-    dummy++;
+    //print(
+ if (bob==2)
+  PrintStrings(2,1,0);
+  bob++;
+ else
+  //   print(DEBUG_Message());
+  PrintStrings(2,DEBUG_Message(),1);
+ endif   //dummy++;
+    //print([STR]DEBUG_Text);
 endif
 
 
