@@ -23,10 +23,13 @@ func DEBUG_Message()
 		l:=str_Length(b);
 		//print(l, " ");
 //		str_Cat(ptr, DEBUG_Providers[n]());
-		mem_Copy(DEBUG_Text ,DEBUG_Text + l,499-l);
-		mem_Copy(b, DEBUG_Text[0],l);
-//TODO CHECK MEM_COPY FROM SCOPE
-		next
+//		mem_Copy(DEBUG_Text ,DEBUG_Text + l,499-l);
+//		mem_Copy(b, DEBUG_Text[0],l);
+//TODO CHECK MEM_COPY FROM SCOPE - Is address offset valid?
+        	mem_Copy(DEBUG_Text, uniptr, 500-l);
+        	mem_Copy(uniptr, DEBUG_Text + l, 500-l);
+        	mem_Copy(b, DEBUG_Text, l);
+	next
     ptr := str_Ptr(DEBUG_Text);
 	//return ptr;
 	ANSI2Uni(str_Ptr(DEBUG_Text), uniptr);
