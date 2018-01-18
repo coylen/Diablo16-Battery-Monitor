@@ -14,29 +14,7 @@ var l,*b;
 
 func DEBUG_Message()
     var n, ptr;
-	if (bob==4)
-		DEBUG_Text[0]:=0;
-	endif
-    ptr := str_Ptr("BOB");
-    for(n := 0; n < DEBUG_Provider_Number; n++)
-        b:= DEBUG_Providers[n]();
-		l:=str_Length(b);
-		//print(l, " ");
-//		str_Cat(ptr, DEBUG_Providers[n]());
-		mem_Copy(DEBUG_Text ,DEBUG_Text + l,499-l);
-		mem_Copy(b, DEBUG_Text[0],l);
-//TODO CHECK MEM_COPY FROM SCOPE
-		next
-    ptr := str_Ptr(DEBUG_Text);
-	//return ptr;
-	ANSI2Uni(str_Ptr(DEBUG_Text), uniptr);
-	return uniptr;
-endfunc
-/* func DEBUG_Message()
-    var n, ptr;
-	if (bob==4)
-		DEBUG_Text[0]:=0;
-	endif
+	DEBUG_Text[0]:=0;
     ptr := str_Ptr(DEBUG_Text);
     for(n := 0; n < DEBUG_Provider_Number; n++)
         str_Cat(ptr, DEBUG_Providers[n]());
@@ -44,14 +22,14 @@ endfunc
     ptr := str_Ptr(DEBUG_Text);
 	ANSI2Uni(str_Ptr(DEBUG_Text), uniptr);
 	return uniptr;
-endfunc */
+endfunc
 func DEBUG_Register(var debug_function)
     DEBUG_Providers[DEBUG_Provider_Number] := debug_function;
     DEBUG_Provider_Number++;
 endfunc
 
 func testcase()
-   // DEBUG_Register(demoprovider);
+    DEBUG_Register(demoprovider);
     DEBUG_Register(demoprovider2);
     DEBUG_Message();
 endfunc
