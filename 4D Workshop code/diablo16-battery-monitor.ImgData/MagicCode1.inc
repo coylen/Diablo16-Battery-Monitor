@@ -48,16 +48,11 @@ if(CurrentForm == 4)
     gfx_Contrast(0);
 endif
 
+//DEGBUG PAGE
 if(CurrentForm == 5 && dummy ==0)
-    //print(
- if (bob==2)
-  PrintStrings(2,1,0);
-  bob++;
- else
-  //   print(DEBUG_Message());
-  PrintStrings(2,DEBUG_Message(),1);
- endif   //dummy++;
-    //print([STR]DEBUG_Text);
+    PrintStrings(2,DEBUG_Message(),1);
+    sys_SetTimerEvent(TIMER7, timerupdate);
+    sys_SetTimer(TIMER7,1000);
 endif
 
 
