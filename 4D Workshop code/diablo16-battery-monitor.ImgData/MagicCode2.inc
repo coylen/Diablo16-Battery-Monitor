@@ -2,6 +2,8 @@
 
 //SETUP DEBUG PROVIDERS
 DEBUG_Register(DS1307DEBUGProvider);
+
+//TODO: CAN BE REMOVED AT SOME POINT
 DEBUG_Register(demoprovider2);
 
 

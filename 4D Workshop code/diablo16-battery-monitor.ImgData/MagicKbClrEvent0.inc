@@ -99,9 +99,6 @@ func rMagicKbClrEvent0(var reportID, var objType, var objHash, var value)
                  B2AHcapacity := tmp_num;
                  break;
         endswitch
-        cleareditlines();
-        edt := 0;
-        tmp_num := -1;
         if(edt <= 11)
             sys_SetTime(hr, mn, sec);
             sys_SetDate(yr, mth, dy);
@@ -109,5 +106,8 @@ func rMagicKbClrEvent0(var reportID, var objType, var objHash, var value)
             sys_SetTimerEvent(TIMER7, timerupdate);
             sys_SetTimer(TIMER7,1000);
         endif
+        cleareditlines();
+        edt := 0;
+        tmp_num := -1;
     endif
 endfunc
