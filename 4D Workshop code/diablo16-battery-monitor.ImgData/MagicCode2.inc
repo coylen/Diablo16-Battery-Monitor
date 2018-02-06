@@ -1,10 +1,10 @@
 //SETUP I2C and UART IN THIS SECTION READY FOR USE
 
 //SETUP DEBUG PROVIDERS
-DEBUG_Register(DS1307DEBUGProvider);
+//DEBUG_Register(DS1307DEBUGProvider);
 
 //TODO: CAN BE REMOVED AT SOME POINT
-DEBUG_Register(demoprovider2);
+//DEBUG_Register(demoprovider2);
 
 
 //I2C STARTUP
@@ -18,6 +18,7 @@ I2C1_Open(I2C_SLOW,PA10,PA11);
 
 //set time for RTC
 RTC_to_sys();
+AT24test();
 
 //TODO: LOAD DATA FROM MEMORY
 

@@ -4,6 +4,7 @@
 #constant _DEBUG_ENABLED   1
 #STACK 300
 #inherit "..\\libs\\DS1307.lib"
+#inherit "..\\libs\\AT24C32.lib"
 #inherit "include\\debug.inc"
 //#inherit "i2c.lib"
 //#constant K_LRS 1   // try this
