@@ -6,6 +6,7 @@
 #inherit "..\\libs\\DS1307.lib"
 #inherit "..\\libs\\AT24C32.lib"
 #inherit "include\\debug.inc"
+#inherit "include\\battery.inc"
 //#inherit "i2c.lib"
 //#constant K_LRS 1   // try this
 //#constant K_LRS 5   // try this

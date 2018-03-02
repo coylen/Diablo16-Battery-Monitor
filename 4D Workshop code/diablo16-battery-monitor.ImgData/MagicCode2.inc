@@ -18,7 +18,7 @@ I2C1_Open(I2C_SLOW,PA10,PA11);
 
 //set time for RTC
 RTC_to_sys();
-AT24test();
+//AT24test();
 
 //TODO: LOAD DATA FROM MEMORY
 
