@@ -21,6 +21,7 @@ var j_LRS := 0, counter_LRS := 0;
 i_LRS := K_LRS - 1;
 var timeru :=0;
 var dummy :=0;
+var batterytimer :=0;
 //SCOPE FUNCTIONS TO BE EDITED
 func UpdateLRScope(var value)
 
@@ -80,6 +81,11 @@ func timerupdate()
     sys_SetTimer(TIMER7,1000);
 endfunc
 
+//TIMER FOR BATTERY READINGS
+func batterytimerupdate()
+    batterytimer := 1;
+    sys_SetTimer(TIMER5,10000);
+endfunc
 
 //
 // Added 07/03/2017 16:26:14

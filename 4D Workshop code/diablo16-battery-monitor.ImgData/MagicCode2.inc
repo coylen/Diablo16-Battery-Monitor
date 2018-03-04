@@ -22,6 +22,8 @@ RTC_to_sys();
 
 //TODO: LOAD DATA FROM MEMORY
 
-//TODO: SETUP TIMER FOR DATA CAPTURE
 
+//SETUP TIMER FOR DATA CAPTURE
+sys_SetTimerEvent(TIMER5, batterytimerupdate);
+sys_SetTimer(TIMER5,10000);
 

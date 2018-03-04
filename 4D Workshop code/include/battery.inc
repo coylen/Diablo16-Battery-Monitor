@@ -37,6 +37,7 @@
 	CHART_MONTHLY	186
 #END
 
+
 var battery1[BATTERY_DATA];
 battery1[ADC_pin] := battery1_voltage_ADC_pin;
 //TODO: Define ADS1115 Channel
@@ -104,6 +105,16 @@ var segment15 := 0; //TODO: rename
 
 var lastdatatime[4];//TODO: rename
 
+#IF (_DEBUG_ENABLED == 1)
+var BATTERYDEBUGText[50];
+
+func BATTERYDEBUGProvider()
+	var pg;
+    pg := str_Ptr(BATTERYDEBUGText);
+    return pg;
+endfunc
+#ENDIF
+
 //HELPER FUNCTION TO DO DEEP COPY OF ARRAY
 func array_Copy(var *ptr_source_array, var *ptr_destination_array, var indices)
 	var x;
@@ -119,8 +130,8 @@ func battery_DataCaptureInterupt()
 	var flags;
 	sys_GetTimeVar(&temp_time[0], &temp_time[1], &temp_time[2], &temp_time[3]); 
 	//basic battery data updates
-	battery_CaptureData(&temp_time);
-	flags := battery_SetTimeFlags(&temp_time);
+	battery_CaptureData(temp_time);
+	flags := battery_SetTimeFlags(temp_time);
 	if (flags > 0)
 		array_Copy(temp_time, lastdatatime,  4);
 		battery_UpdateData(flags);

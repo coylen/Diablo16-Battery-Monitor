@@ -9,6 +9,12 @@ if(CurrentForm == 3 && timeru == 1)
     timeru := 0;
 endif
 
+//BATTERY DATA CAPTURE
+if(batterytimer == 1)
+    battery_DataCaptureInterupt();
+    batterytimer := 0;
+endif
+
 //DEBUG PAGE UPDATE EVERY 10 SECONDS
 /*if(CurrentForm == 5 && timeru == 1)
     timeru := 0;
